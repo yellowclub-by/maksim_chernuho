@@ -34,6 +34,6 @@ async def favorites(message: types.Message):
 async def donating(message: types.Message):
     await message.answer("вы хотите пожертвовать в наш бот?")
 
-@user_router.message(F.text.lower().contains("стои")|F.text.lower().contains("цен"))
-async def echo(message: types.Message):
-    await message.answer("временно недоступен")
+# @user_router.message(F.text.lower().contains("стои")|F.text.lower().contains("цен"))
+# async def echo(message: types.Message):
+#     await message.answer("временно недоступен")
