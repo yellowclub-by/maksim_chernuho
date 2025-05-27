@@ -1,10 +1,11 @@
 import asyncio
 from aiogram import Bot,Dispatcher
-
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 
 
 TOKEN ="8175029494:AAErbnNXe7SjNMIy1m7iujgiZc_WibN5t7M"
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN,default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 
 from handlers.catalog import catalog_router
